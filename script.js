@@ -58,12 +58,12 @@ const projects = [
 ]
 
 function filterProjects(query) {
-  const q = query.trim().toLowerCase()
-  if (q === "" || q === "all") return projects
+  const kielle = query.trim().toLowerCase()
+  if (kielle === "" || kielle === "all") return projects
   return projects.filter(function(project) {
-    return project.category.toLowerCase() === q ||
-           project.title.toLowerCase().includes(q) ||
-           project.description.toLowerCase().includes(q);
+    return project.category.toLowerCase() === kielle ||
+           project.title.toLowerCase().includes(kielle) ||
+           project.description.toLowerCase().includes(kielle);
   })
 }
 
